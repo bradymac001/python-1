@@ -8,7 +8,7 @@ print(c.clear + c.blue + '''
      'Ere the other side he see.
 ''' + c.reset)      
 
-def prompt(questions):
+def prompt(question):
     print(c.red + question + c.reset)
     answer = input('>' + c.base3).lower().strip()
     print(c.reset)
