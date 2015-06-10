@@ -8,19 +8,44 @@ print(c.clear + c.blue + '''
      'Ere the other side he see.
 ''' + c.reset)      
 
-print('what is your name?' + c.green)
-name = input('>' + c.orange)
-print(c.reset)
+def prompt(questions):
+    print(c.red + question + c.reset)
+    answer = input('>' + c.base3).lower().strip()
+    print(c.reset)
+    return answer
 
-print('What is your quest?')
-answer = input('>' + c.magenta)
-print(c.reset)
+def live():
+        print('go ahead across the bridge')
+
+def die():
+    print('swim with the ACID!!!!!')
+
+name = prompt('what is your name?')
+quest = prompt('What is your quest?')
 
 if name in ['lancelot','galahad']:
-    print('What is your favorite color?')
-    answer = input('>' + c.red)
-    print(c.reset)
+    color = prompt('what is your favorite color')
+    if color == 'blue':
+        live()
+    else:
+        die()
 
+elif name == 'robin':
+    capital = prompt ('What is the capital of Assyria?')
+    if capital in ['assur','ashur']:
+        live()
+    else:
+        die()
+
+elif name == 'arthur':
+    speed = prompt('What is the air speed velocity of an unladen swallow?')
+    if speed == '24mph':
+        live()
+    elif 'african or european swallow' in speed:
+        print('Bridgekeeper dies.')
+        live()
+    else:
+        die()
 
 
 
