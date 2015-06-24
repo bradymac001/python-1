@@ -3,20 +3,20 @@ import colors as c
 from utils import ask
 
 intro = c.magenta + '''
-Welcome tothe pink fluffy unicorns quiz
+Welcome to my fnaf quiz
 
-lets test your knowledge of what you learned so far.
+lets see what you know about this all of the fnaf games
 '''
 
 def q1():
-    answer = ask("What color are the unicorns?")
-    if answer == "pink":
+    answer = ask("in fnaf2, how many characters are there?")
+    if answer == "11":
         return True
     return False
 
 def q2():
-    answer = ask("What are the unicorns dancing on?")
-    if answer == "rainbows":
+    answer = ask("who killed the children?")
+    if answer == " the purple man":
         return True
     return False
 
