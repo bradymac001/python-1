@@ -22,7 +22,7 @@ def q2():
 
 def q3():
     answer = ask("What are their fur made of?")
-    if awnswer.startswith("smile"):
+    if answer.startswith("smile"):
         return True
     return False
 
