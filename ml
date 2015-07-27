@@ -2,13 +2,12 @@
 import colors as c
 from utils import ask
 
-text = '''
-my crazy pet
+text = '''My Crazy Pet
 
 once my pet {animal} was running around my {a place in your house}
 with a {explosive thing} straped to {his or her} back and then i lit the 
 {same explosive you chose before} and went flying out of my front door
-and then exploded in my neighbors'''
+and then exploded in my neighbors front yard. The End''' 
 
 
 words = {
