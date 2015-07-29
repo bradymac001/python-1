@@ -1,17 +1,59 @@
 #!/usr/bin/env python3
 
 import colors as c
-print(c.clear)
+import random
 
-sides = [1,2,3,4,5,6]
+sides = []
 
-for side in sides:
-    print("side:",side)
+sides.append('''
+ -------
+|       |
+|   o   |
+|       | 
+ -------
+''')
 
+sides.append('''
+ -------
+| o     |
+|       |
+|     o | 
+ -------i
+''')
 
-#while n < 6:
-#    print("n:", n)
-#    print("side:",sides[n])
-#    n += 1
+sides.append('''
+ -------
+| o     |
+|   o   |
+|     o | 
+ -------
+''')
 
+sides.append('''
+ -------
+| o   o |
+|       |
+| o   o | 
+ -------
+''')
 
+sides.append('''
+ -------
+| o   o |
+|   o   |
+| o   o | 
+ -------
+''')
+
+sides.append('''
+ -------
+| o   o |
+| o   o |
+| o   o | 
+ -------
+''')
+
+while True:
+    side = random.choice(sides) 
+    print(c.clear + c.random_color() + side + c.reset)
+    input()
