@@ -1,0 +1,14 @@
+#!/usr/bin/env python3
+import random
+import colors as c
+
+sides = []
+
+sides.append("1")
+sides.append("2")
+sides.append("3")
+sides.append("4")
+sides.append("5")
+sides.append("6")
+
+
