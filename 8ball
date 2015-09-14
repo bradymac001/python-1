@@ -1,0 +1,34 @@
+#!/usr/bin/env python3
+import colors
+import random
+
+print('welcome to the magic eightball.')
+
+answers = ["yes.","maybe.","no."]
+
+while True:
+    input("--->")
+    answer = random.choice(answers)
+    print(answer)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
