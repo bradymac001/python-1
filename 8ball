@@ -1,18 +1,26 @@
 #!/usr/bin/env python3
-import colors
+import colors as c
 import random
 
 print('welcome to the magic eightball.')
 
 answers = ["yes.","maybe.","no."]
 
-while True:
-    input("--->")
-    answer = random.choice(answers)
-    print(answer)
+try:
 
+    while True:
+        question = input('> ' + c.red)
+        if  "death" in question or "die" in question:
+            print(c.base3 + "I will not answer that")
+        elif "???" in question:
+            print("I dont know what you just said")
+        else:    
+            answer = random.choice(answers)
+            print(answer)
 
-
+except KeyboardInterrupt:
+    print("see you later.")
+    exit()
 
 
 
