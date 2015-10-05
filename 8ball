@@ -7,9 +7,14 @@ print('welcome to the magic eightball.')
 answers = ["yes.","maybe.","no.","obiously","???","outlook not so good","reply hazy try again",
 "not in a million years.","I have no idea","It is certain.",
 "MEH","yes defenetly","better not tell you now","dear god no"]
+
 def ask(prompt):
     answer = input('> ' + c.red).strip().lower()
     return answer
+
+def bye():
+      print("It was nice to see you.")
+      exit()
 
 try:
 
@@ -19,13 +24,14 @@ try:
             print(c.base3 + "I will not answer that")
        elif "???" in question:
             print("I dont know what you just said")
+       elif "bye" in question or "exit" in question:
+            bye()
        else:    
             answer = random.choice(answers)
             print(answer)
 
 except KeyboardInterrupt:
-    print("see you later.")
-    exit()
+    bye()
 
 
 
